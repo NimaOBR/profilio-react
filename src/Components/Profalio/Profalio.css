@@ -1,0 +1,65 @@
+.Profalio-section {
+  padding-top: 4rem;
+}
+.container-protfolio {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+  padding: 0 4rem;
+  place-items: center;
+  align-items: center;
+}
+
+.protfolio-item {
+  background-color: var(--color-bg-varient);
+  padding: 1.3rem;
+  border-radius: 2rem;
+  border: 3px solid transparent;
+  transition: var(--transition);
+}
+
+.protfolio-item:hover {
+  background-color: transparent;
+  border-color: var(--color-primay);
+}
+.protfolio-item-img img {
+  width: 340px;
+  border-radius: 2rem;
+  height: 200px;
+}
+.protfolio-item h3 {
+  letter-spacing: 2px;
+  font-size: 1.08rem;
+  margin-bottom: 30px;
+}
+.protfolio-item a {
+  margin: 0 10px;
+}
+
+@media screen and (max-width: 1168px) {
+  .container-protfolio {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    place-items: center;
+  }
+  .protfolio-item {
+    width: fit-content;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container-protfolio {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    place-items: center;
+    align-items: center;
+    padding: 0 6rem !important;
+    
+  }
+  .protfolio-item {
+    width: 300px;
+  }
+  .protfolio-item img{
+    width: 250px;
+  }
+}

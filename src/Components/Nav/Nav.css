@@ -1,0 +1,29 @@
+nav{
+    background-color: rgba(0, 0, 0, 0.4);
+    width: max-content;
+    padding: .5rem 1rem;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 1rem;
+    border-radius: 3rem;
+    display: flex;
+    align-items: center;
+    gap:.9rem;
+    z-index: 200;
+}
+nav a{
+    padding: .6rem;
+    display: flex;
+    border-radius: 50%;
+    font-size: 1.2rem;
+}
+nav a:hover{
+    background: var(--color-primay);
+    transition: var(--transition);
+    color: #000;
+}
+nav .active{
+    background: var(--color-primay);
+    color: #000;
+}

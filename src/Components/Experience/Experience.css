@@ -1,0 +1,78 @@
+
+.experience-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 2rem;
+  row-gap: 3rem;
+  text-align: start;
+}
+.container-experience > div {
+  background-color: var(--color-bg-varient);
+  padding: 2.4rem 5rem;
+  border-radius: 2rem;
+  border: 1px solid transparent;
+  letter-spacing: 2px;
+  transition: var(--transition);
+  padding: 2rem 2rem;
+}
+.container-experience > div:hover {
+  background-color: transparent;
+  border-color: #fff;
+}
+.experience-frontend h3 {
+  color: var(--color-primay);
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+.technology {
+  margin-bottom: 4rem;
+  font-family: beginner;
+  font-size: 1.16rem;
+  letter-spacing: 4px;
+}
+
+.experience-details {
+  display: flex;
+  gap: 1.1rem;
+}
+.experience-details-icon {
+  margin-top: 22px;
+  margin-right: -10px;
+  color: var(--color-primay);
+}
+.experience-tab {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+  letter-spacing: 2px;
+}
+.experience-tab h5 {
+  font-size: 0.9rem;
+}
+.Experience {
+  margin-top: 5rem;
+}
+
+@media screen and (max-width: 1068px) {
+  .Experience {
+    margin-top: 10rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .experience-content {
+    grid-template-columns: 1fr ;
+    row-gap: 2rem;
+    place-items: center;
+  }
+  .container-experience > div {
+    width: 100%;
+    padding: 1rem ;
+  }
+  .container-experience {
+    padding: 0 1rem;
+  }
+}
